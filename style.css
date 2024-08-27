@@ -1,0 +1,322 @@
+body {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+}
+
+h1 {
+  letter-spacing: 5px;
+  font-style: italic;
+  font-size: 30px;
+  margin-block-start: 5px;
+  margin-block-end: 5px;
+  color: #ff8000;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 50px;
+  padding-right: 35px;
+  padding-top: 0px;
+}
+
+.descriptionFood {
+  text-wrap: wrap;
+}
+
+.logoImgContainer {
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0px 0px 7px silver;
+  position: absolute;
+  top: 180px;
+  left: 130px;
+  height: 70px;
+  width: 70px;
+  text-align: center;
+}
+.logoImgContainer img {
+  height: 100%;
+  width: 90%;
+}
+
+nav img {
+  height: 25px;
+  width: 25px;
+  margin-left: 20px;
+  border-radius: 20px;
+  border: 0px solid black;
+  object-fit: cover;
+}
+
+.mainImg {
+  /* background-image: url("./img/italian_pizza.avif"); */
+  object-fit: cover;
+  height: 180px;
+  width: 100%;
+}
+
+.content {
+  display: flex;
+}
+.basketInfo {
+  text-align: center;
+  font-weight: 900;
+}
+.rightContainer {
+  width: 370px;
+  box-shadow: -6px 0px 7.5px -7.5px rgba(0, 0, 0, 0.2);
+  background-color: #ffffff;
+  height: 100vh;
+  position: sticky;
+  top: 0;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.rightContainer h2 {
+  text-align: center;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+}
+
+.amountChange {
+  width: 70px;
+  display: flex;
+  align-items: center;
+}
+
+.addAmount {
+  border-radius: 20px;
+  background-color: #cdcdcd;
+  font-weight: 900;
+  margin-right: 5px;
+  text-align: center;
+  font-size: 20px;
+  width: 35px;
+}
+
+.addAmount:hover {
+  background-color: #939292;
+  cursor: pointer;
+}
+
+table {
+  width: 370px;
+  font-weight: 400;
+}
+
+.tdAmount {
+  width: 30px;
+}
+
+.tdPrice {
+  width: 65px;
+  text-align: right;
+}
+.foodBasket {
+  width: 200px;
+}
+.containerContentLeft {
+  margin: 50px auto;
+  width: 80%;
+  border: 0px solid rgb(170, 46, 46);
+  padding-left: 10px;
+  border-radius: 20px;
+}
+
+.containerFood {
+  margin-bottom: 20px;
+  background-color: #f7efef;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.containerFood:hover {
+  margin-top: 15px;
+  background-color: #e7dddd;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.containerFood h3 {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+.containerFoodHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.addLink {
+  border: 1px solid rgb(161, 159, 159);
+  height: 25px;
+  width: 25px;
+  padding-top: 4px;
+  padding-left: 2px;
+  padding-right: 2px;
+  text-align: center;
+  border-radius: 50%;
+  font-weight: 800;
+  background-color: #cdcdcd;
+}
+
+.addLink:hover {
+  background-color: #939292;
+  cursor: pointer;
+}
+
+.bicycleImg {
+  width: 20px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.cartImg {
+  width: 20px;
+  padding-right: 5px;
+}
+
+.ratingImg {
+  height: 25px;
+  margin-bottom: 10px;
+}
+.left {
+  width: 80%;
+  border: 0px solid black;
+  background-color: #fcfcfc;
+}
+
+.deliveryFee {
+  display: flex;
+  vertical-align: middle;
+  font-size: 14x;
+  margin-bottom: 40px;
+}
+
+button {
+  background-color: #f36804;
+  border-radius: 50px;
+  padding: 10px 44px;
+  font-size: 20px;
+  color: #ffffff;
+  border: 0px;
+}
+
+button:hover {
+  background-color: #f36804c7;
+  cursor: pointer;
+}
+
+.minusAmount {
+  border-radius: 20px;
+  background-color: #cdcdcd;
+  font-weight: 900;
+  margin-right: 5px;
+  text-align: center;
+
+  font-size: 20px;
+  width: 35px;
+}
+
+.minusAmount:hover {
+  background-color: #939292;
+  cursor: pointer;
+}
+
+.dialog-bg {
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 999;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dialog {
+  height: 100vh;
+  width: 100vw;
+  background-color: #fff;
+  border-radius: 10px;
+  border: 1px solid grey;
+  padding: 24px;
+}
+
+.d-none {
+  display: none;
+}
+
+.buttonBottom {
+  margin-left: 50px;
+  margin-bottom: 20px;
+}
+
+.buttonPopUp {
+  text-align: center;
+}
+.basketInfoSmall {
+  text-align: center;
+  font-weight: 900;
+}
+
+.smallTable {
+  width: 320px;
+  font-weight: 400;
+}
+.tdAmountSmall {
+  width: 30px;
+}
+
+.amountChangeSmall {
+  width: 70px;
+  display: flex;
+  align-items: center;
+}
+
+.foodBasketSmall {
+  width: 190px;
+}
+
+.tdPriceSmall {
+  width: 80px;
+  text-align: right;
+}
+
+.basketInfoSmall {
+  text-align: center;
+  font-weight: 900;
+}
+
+.center {
+  margin-left: 50px;
+}
+
+.dialogHeader {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.buttonTop {
+  background-color: #f36804;
+  border-radius: 20px;
+  padding: 5px 5px;
+
+  font-size: 20px;
+  color: #ffffff;
+  border: 0px;
+}
+
+.closePopUpLink {
+  cursor: pointer;
+  font-weight: 700;
+}

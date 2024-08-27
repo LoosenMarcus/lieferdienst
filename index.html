@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lieferando Clone</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style-media.css" />
+    <script src="script.js"></script>
+    <link
+      type="image/png"
+      sizes="32x32"
+      rel="icon"
+      href="./img/besteck32.png"
+    />
+  </head>
+  <body onload="loadMenu();  calculateBasket()">
+    <header>
+      <h1>Lieferclone</h1>
+      <nav>
+        <a href="#"><img src="./img/ger_flagge.png" /></a
+        ><a href="#"><img src="./img/menu.svg" /></a>
+      </nav>
+    </header>
+    <div class="logoImgContainer"><img src="./img/pizzabacker.png" /></div>
+    <div class="contentWrapper">
+      <div class="content">
+        <div class="left">
+          <div class="mainImg">
+            <img class="mainImg" src="./img/italian_pizza.avif" />
+          </div>
+          <div class="containerContentLeft">
+            <h2>Der Pizzabäcker</h2>
+            <br />
+            <img class="ratingImg" src="img/rating.png" /><br />
+            <div class="deliveryFee">
+              <img class="cartImg" src="img/cart.svg" /> Min: 25.00 € |
+              <img class="bicycleImg" src="./img/bicycle.ico" /> 4.95 €
+            </div>
+
+            <div class="output" id="output"></div>
+          </div>
+        </div>
+        <div class="rightContainer">
+          <h2>Warenkorb</h2>
+
+          <table border="0">
+            <tbody id="basketOutput"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div id="dialog" class="dialog-bg d-none">
+      <div class="dialog">
+        <div class="dialogHeader">
+          <h2>Ihr Warenkorb</h2>
+
+          <span id="closeBasket" class="closePopUpLink" onclick="closeDialog()">
+            Schliessen
+          </span>
+        </div>
+        <table class="smallTable">
+          <tbody id="dialogMessage"></tbody>
+          <tr>
+            <td colspan="4"></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <button class="buttonBottom" onClick="openDialog(); calculateBasket()">
+      Warenkorb
+    </button>
+  </body>
+</html>
